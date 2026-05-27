@@ -39,7 +39,7 @@ print(n_classes)
 # %%
 
 train_df, tmp_df = train_test_split(df, test_size=0.30, random_state=42)
-val_df, test_df  = train_test_split(tmp_df, test_size=0.50, random_state=42)
+val_df, test_df = train_test_split(tmp_df, test_size=0.50, random_state=42)
 
 X_train, y_train = train_df["label"].to_numpy(), train_df["code"].to_numpy()
 X_val, y_val = val_df["label"].to_numpy(), val_df["code"].to_numpy()
@@ -94,7 +94,7 @@ mlflow.pytorch.autolog()
 training_config = TrainingConfig(
     num_epochs=1,
     batch_size=128,
-    lr=5*1e-4,
+    lr=5e-4,
     patience_early_stopping=5,
 )
 

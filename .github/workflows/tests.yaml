@@ -6,7 +6,7 @@ on:
       - "main"
 
 jobs:
-  publish-site:
+  test-render:
       runs-on: ubuntu-latest
 
       permissions:

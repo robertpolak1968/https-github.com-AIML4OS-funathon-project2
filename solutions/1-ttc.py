@@ -49,7 +49,7 @@ print(f"Train: {len(train_df)} | Val: {len(val_df)} | Test: {len(test_df)}")
 
 
 #%%
-all_codes  = set(df['code'])
+all_codes = set(df['code'])
 train_codes = set(train_df['code'])
 missing = all_codes - train_codes
 
